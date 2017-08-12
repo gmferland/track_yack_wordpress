@@ -1,12 +1,20 @@
 <div class="ty_post_snapshot">
-	<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-	<p class="blog-post-meta">
-    <?php the_date(); ?> by <a href="#"><?php the_author(); ?></a> • 
-    <a href="<?php comments_link(); ?>">
-	  <?php printf( _nx( 'One Comment', '%1$s Comments', 
-      get_comments_number(), 'comments title', 'textdomain' ), 
-      number_format_i18n( 						get_comments_number() ) ); ?>
+  <div class="ty_post_snapshot_thumbnail">
+    <a href="<?php the_permalink(); ?>">
+      <?php if ( has_post_thumbnail() ) {
+        the_post_thumbnail('thumbnail');
+      } else {?>
+        <img height="150" width="150" src="<?php echo get_bloginfo( 'template_directory' );?>/images/bubble_wht.png" />
+      <?php } ?>
     </a>
-  </p>
-  <?php the_excerpt(); ?>
+  </div>
+  <div >
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <p class="blog-post-meta">
+      <?php the_date(); ?> by <?php the_author(); ?>
+    </p>
+    <div class="hidden-xs hidden-sm">
+      <?php the_excerpt(); ?>
+    </div>
+  </div>
 </div>

@@ -1,5 +1,5 @@
     </div> <!-- Close container class -->
-    <div class="ty_footer">
+    <div class="container-fluid ty_footer">
       <div class="row no-gutters">
         <div class="col-xs-4 col-xs-offset-4 text-center">
           <a href="<?php echo get_option('facebook'); ?>"><img class="ty_footer_icon" src="<?php echo get_bloginfo( 'template_directory' );?>/images/facebook_icon.svg" /></a>
