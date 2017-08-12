@@ -254,6 +254,10 @@ h2 {
   color: #bfbfbf;
 }
 
+.ty_footer li {
+  list-style: none;
+}
+
 .ty_footer a:hover {
   text-decoration: none;
   color: #FFF;
