@@ -1,0 +1,263 @@
+/* Color scheme:
+primary:
+black #000
+yellow #dea74c
+white #FFF
+
+backgrounds:
+dark gray #8c8989
+almost black #282a2b
+
+text:
+black #333
+dark gray #525252
+light gray #bfbfbf */
+
+/*
+ * Globals
+ */
+h2 {
+  padding-bottom: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+ * Header
+ */
+.ty_header {
+  position: fixed;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  height: 85px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.ty_header_logo {
+  padding-top: 13px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.ty_header a {
+  text-decoration: none;
+}
+
+/* Header links */
+.ty_header_links {
+  position: relative;
+  display: inline-block;
+}
+
+.ty_header_links li {  
+  position: relative;
+  display: inline-block;
+  padding-top: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.ty_header_links li a {
+  padding: 10px;
+  color: #FFF;
+}
+
+/* Active state gets a thick underline */
+.ty_header_links li a:hover {
+  color: #dea74c;
+  background-color: #000;
+  border-bottom: 4px solid #dea74c;
+}
+
+/* Header "join us" button */
+.ty_header_button {
+  background-color: #000;
+  color: #dea74c;
+  border: 2px solid #dea74c;
+  width: 100px;
+  padding: 10px;
+  margin-top: 13px;
+  margin-right: 50px;
+  text-align: center;
+  border-radius: 3px; 
+}
+
+.ty_header_button:hover {
+  background-color: #dea74c;
+  color: #000;
+  border-color: #dea74c;
+}
+
+/* Medium screen dropdown menu */
+.ty_header_dropdown_med {
+  background-color: #000;
+  color: #FFF;
+}
+
+.ty_header_dropdown_med a:focus {
+  color: #FFF;
+  background-color: #000 !important;
+  border: none;
+}
+
+.ty_header_dropdown_med.open a:focus:hover {
+  border: none;
+}
+
+.ty_header_dropdown_med .dropdown-menu {
+  background-color: #000;
+  color: #FFF;
+}
+
+.ty_header_dropdown_med li a:hover {
+  color: #dea74c;
+  border: none;
+}
+
+/* Small screen dropdown menu */
+.ty_header_dropdown_small {
+  border: 2px solid #dea74c;
+  background-color: #000;
+  margin-top: 13px;
+  margin-left: 50px;
+  float: left;
+}
+
+.ty_header_dropdown_small span {
+  background-color: #dea74c;
+}
+
+.navbar-collapse.collapse.in {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: -1px;
+  margin-right: -1px;
+  background-color: #000;
+  color: #FFF;
+  z-index: 1000;
+  text-align: center;
+}
+
+.navbar-collapse.collapse.in .ty_header_links,
+.navbar-collapse.collapse.in .ty_header_links li {
+  display: block;
+}
+
+/* Remove animation of collapsing menu */
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+.navbar-collapse.in a:hover,
+.navbar-collapse.in a:focus {
+  color: #dea74c;
+  border: none;
+}
+
+/*
+ * Main content
+ */
+.ty_content {
+  padding-top: 85px;
+}
+
+
+/*
+* Social sidebar
+*/
+.ty_social {
+   text-align: center;
+ }
+/* Sidebar modules for boxing content */
+
+/* Main sidebar */
+.ty_main_sidebar {
+  position: fixed;
+}
+
+/*
+ * Home page
+ */
+.ty_featured {
+  display: inline-block;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 0px;
+  margin-bottom: -147px;
+}
+
+.ty_featured img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+}
+
+.ty_featured_caption {
+  position: relative;
+  top: -147px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #bfbfbf;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.ty_content_home {
+  margin-top: 10px;
+}
+
+ /* Pagination */
+
+ /*
+ * Blog posts
+ */
+
+/*
+* Footer
+*/
+.ty_footer {
+  background-color: #282a2b;
+  color: #bfbfbf;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ty_footer a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.ty_footer a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.ty_footer_icon {
+  max-width: 40px;
+}
+
+.ty_footer_text {
+  display: inline-block;
+  border-right: 1px solid #bfbfbf;
+  padding-left: 7px;
+  padding-right: 12px;
+  margin-bottom: 6px;
+}
+
+.ty_footer_text:last-child {
+  border: none;
+}
