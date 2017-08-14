@@ -10,7 +10,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.ico" type="image/x-icon">
-    <?php wp_head();?>
+    <?php wp_head() ?>
   </head>
   <body>
     <nav class="navbar navbar-full ty_header">

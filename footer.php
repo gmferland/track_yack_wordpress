@@ -2,8 +2,8 @@
     <div class="container-fluid ty_footer">
       <div class="row">
         <div class="col-md-3 ty_footer_section text-center">
-          <a href="<?php echo get_option('facebook'); ?>"><img class="ty_footer_icon" src="<?php echo get_bloginfo( 'template_directory' );?>/images/facebook_icon.svg" /></a>
-          <a href="<?php echo get_option('twitter'); ?>"><img class="ty_footer_icon" src="<?php echo get_bloginfo( 'template_directory' );?>/images/twitter_icon.svg" /></a>
+          <a href="<?php echo get_option('facebook_url'); ?>"><img class="ty_footer_icon" src="<?php echo get_bloginfo( 'template_directory' );?>/images/facebook_icon.svg" /></a>
+          <a href="<?php echo get_option('twitter_url'); ?>"><img class="ty_footer_icon" src="<?php echo get_bloginfo( 'template_directory' );?>/images/twitter_icon.svg" /></a>
           <form>
             <input type="text" name="lastname" placeholder="Email">
           </form>
@@ -51,7 +51,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="<?php echo get_bloginfo( 'template_directory' );?>/js/twitter.js"></script>
     <?php wp_footer(); ?>
   </body>
 </html>

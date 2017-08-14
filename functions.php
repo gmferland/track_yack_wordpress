@@ -24,7 +24,7 @@ function custom_settings_page() { ?>
     <h1>Custom Settings</h1>
     <form method="post" action="options.php">
        <?php
-           settings_fields( 'section' );
+           settings_fields( 'section-social' );
            do_settings_sections( 'theme-options' );      
            submit_button(); 
        ?>          
@@ -33,22 +33,32 @@ function custom_settings_page() { ?>
 <?php }
 
 // Twitter
-function setting_twitter() { ?>
-  <input type="text" name="twitter" id="twitter" value="<?php echo get_option( 'twitter' ); ?>" />
+function setting_twitter_url() { ?>
+  <input type="text" name="twitter_url" id="twitter_url" placeholder="https://twitter.com/username"value="<?php echo get_option('twitter_url'); ?>" />
+<?php }
+function setting_twitter_user() { ?>
+  <input type="text" name="twitter_user" id="twitter_user" placeholder="@username" value="<?php echo get_option( 'twitter_user' ); ?>" />
 <?php }
 
 // Facebook
-function setting_facebook() { ?>
-  <input type="text" name="facebook" id="facebook" value="<?php echo get_option( 'facebook' ); ?>" />
+function setting_facebook_url() { ?>
+  <input type="text" name="facebook_url" id="facebook_url" placeholder="https://www.facebook.com/username" value="<?php echo get_option('facebook_url'); ?>" />
+<?php }
+function setting_facebook_user() { ?>
+  <input type="text" name="facebook_user" id="facebook_user" placeholder="User Name" value="<?php echo get_option( 'facebook_user' ); ?>" />
 <?php }
 
 function custom_settings_page_setup() {
-  add_settings_section( 'section', 'All Settings', null, 'theme-options' );
-  add_settings_field( 'twitter', 'Twitter URL', 'setting_twitter', 'theme-options', 'section' );
-  add_settings_field( 'facebook', 'Facebook URL', 'setting_facebook', 'theme-options', 'section' );
+  add_settings_section( 'section-social', 'Social Media Settings', null, 'theme-options' );
+  add_settings_field( 'twitter_user', 'Twitter username', 'setting_twitter_user', 'theme-options', 'section-social' );
+  add_settings_field( 'twitter_url', 'Twitter URL', 'setting_twitter_url', 'theme-options', 'section-social' );
+  add_settings_field( 'facebook_user', 'Facebook username', 'setting_facebook_user', 'theme-options', 'section-social' );
+  add_settings_field( 'facebook_url', 'Facebook URL', 'setting_facebook_url', 'theme-options', 'section-social' );
 
-  register_setting('section', 'twitter');
-  register_setting('section', 'facebook');
+  register_setting('section-social', 'twitter_user');
+  register_setting('section-social', 'twitter_url');
+  register_setting('section-social', 'facebook_user');
+  register_setting('section-social', 'facebook_url');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
