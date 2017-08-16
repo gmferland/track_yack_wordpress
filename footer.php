@@ -32,6 +32,54 @@
           </ul>
         </div>
         <div class="col-md-3 ty_footer_section text-center">
+          <ul>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/amherst/">Amherst</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/bates/">Bates</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/bowdoin/">Bowdoin</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/colby/">Colby</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/connecticut/">Connecticut</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/hamilton">Hamilton</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/middlebury">Middlebury</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/trinity">Trinity</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/tufts">Tufts</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/wesleyan">Wesleyan</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/williams">Williams</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 ty_footer_section text-center">
+          <ul>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/cross-country/">Cross Country</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/indoor/">Indoor</a>
+            </li>
+            <li>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/outdoor/">Outdoor</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="row">
