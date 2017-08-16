@@ -198,11 +198,23 @@ a, a:hover {
   width: 100vw;
   height: 89vh;
   overflow: hidden;
+
 }
 
 .ty_featured_image img {
   width: 110vw;
   height: auto;
+}
+
+.ty_featured_caption {
+  position: relative;
+  top: -146px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #bfbfbf;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  margin-bottom: -146px;
 }
 
 .ty_content_home {
