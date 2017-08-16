@@ -13,6 +13,14 @@
     <?php wp_head() ?>
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <nav class="navbar navbar-full ty_header">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -65,12 +73,12 @@
             </li>
           </ul>
           <div class="visible-lg navbar-right ty_header_links">
-            <a href="/join-us/"><div class="ty_header_button">Join us!</div></a>
+            <a href="/join-us/" role="button" class="btn btn-default ty_header_button">Join us!</a>
           </div>
         </div>
       </div>  
     </nav>
-    <div class="container-fluid ty_content">
+    <div class="container-fluid">
     <!-- Container tag closed in footer.php -->
   <!-- Body tag closed in footer.php -->
 <!-- Html tag closed in footer.php -->

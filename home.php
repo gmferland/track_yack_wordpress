@@ -29,4 +29,21 @@
     <?php get_template_part('sidebar', 'social'); ?>
     </div>
   </div>
+  <script>
+    jQuery(document).ready(function() {
+      var $ = jQuery;
+      var $initialImageHeight = $('.ty_featured_image').height();
+      function adjustImageContainer() {
+        $featuredImage = $('.ty_featured_image img');
+        $featuredWrapper = $('.ty_featured_image');
+        if ($featuredImage.height() < $initialImageHeight) {
+          $featuredWrapper.height($featuredImage.height());
+        } else {
+          $featuredWrapper.height($initialImageHeight);
+        }
+      }
+      adjustImageContainer();
+      $(window).resize(adjustImageContainer);
+    });
+  </script>
 <?php get_footer(); ?>

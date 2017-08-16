@@ -24,24 +24,26 @@ h2 {
  * Header
  */
 .ty_header {
-  position: fixed;
-  left: 0;
   background-color: #000;
   width: 100%;
-  height: 85px;
+  height: 67px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 0px;
   border-radius: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  z-index: 1000;
 }
 
-.ty_header_logo {
-  padding-top: 13px;
+.navbar-brand.ty_header_logo {
+  padding-top: 5px;
+  padding-bottom: 0px;
   padding-left: 50px;
   padding-right: 20px;
+}
+
+.ty_header_logo img {
+  max-width: 200px;
 }
 
 .ty_header a {
@@ -57,10 +59,9 @@ h2 {
 .ty_header_links li {  
   position: relative;
   display: inline-block;
-  padding-top: 13px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  margin-top: 3px;
 }
 
 .ty_header_links li a {
@@ -82,10 +83,8 @@ h2 {
   border: 2px solid #dea74c;
   width: 100px;
   padding: 10px;
-  margin-top: 13px;
   margin-right: 50px;
-  text-align: center;
-  border-radius: 3px; 
+  font-size: 16px;   
 }
 
 .ty_header_button:hover {
@@ -124,7 +123,7 @@ h2 {
 .ty_header_dropdown_small {
   border: 2px solid #dea74c;
   background-color: #000;
-  margin-top: 13px;
+  margin-top: 4px;
   margin-left: 50px;
   float: left;
 }
@@ -166,9 +165,6 @@ h2 {
 /*
  * Main content
  */
-.ty_content {
-  padding-top: 85px;
-}
 
 
 /*
@@ -191,24 +187,18 @@ h2 {
   display: inline-block;
   margin-left: -15px;
   margin-right: -15px;
-  margin-top: 0px;
-  margin-bottom: -147px;
+  margin-bottom: 0px;
 }
 
-.ty_featured img {
-  width: 100%;
+.ty_featured_image {
+  width: 100vw;
+  height: 89vh;
+  overflow: hidden;
+}
+
+.ty_featured_image img {
+  width: 110vw;
   height: auto;
-  max-height: 100vh;
-}
-
-.ty_featured_caption {
-  position: relative;
-  top: -147px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #bfbfbf;
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
 }
 
 .ty_content_home {
