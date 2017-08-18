@@ -17,17 +17,25 @@ light gray #bfbfbf */
  * Globals
  */
 h2 {
+  color: #333;
   padding-bottom: 4px;
 }
 
-a, a:hover {
+p a, p a:hover {
   color: #dea74c;
+}
+
+i.social {
+  margin: 5px;
 }
 
 /*
  * Header
  */
 .ty_header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
   background-color: #000;
   width: 100%;
   height: 67px;
@@ -60,6 +68,10 @@ a, a:hover {
   display: inline-block;
 }
 
+.ty_header_links>a {
+  color: #dea74c;
+}
+
 .ty_header_links li {  
   position: relative;
   display: inline-block;
@@ -87,8 +99,10 @@ a, a:hover {
   border: 2px solid #dea74c;
   width: 100px;
   padding: 10px;
+  margin-left: 10px;
   margin-right: 50px;
-  font-size: 16px;   
+  font-size: 16px;
+  vertical-align: top;
 }
 
 .ty_header_button:hover {
@@ -169,7 +183,22 @@ a, a:hover {
 /*
  * Main content
  */
+.ty_content {
+  margin-top: 67px;
+}
 
+/*
+ * Search results
+ */
+.ty_search a {
+  color: #333;
+}
+
+.ty_search a:hover,
+.ty_search a:focus {
+  color: #dea74c;
+  text-decoration: none;
+}
 
 /*
 * Social sidebar
@@ -181,7 +210,17 @@ a, a:hover {
 
 /* Main sidebar */
 .ty_main_sidebar {
-  position: fixed;
+  padding-top: 15px;
+}
+
+.ty_main_sidebar a {
+  color: #bfbfbf;
+}
+
+.ty_main_sidebar a:hover,
+.ty_main_sidebar a:focus {
+  color: #525252;
+  text-decoration: none;
 }
 
 /*
@@ -228,6 +267,10 @@ a, a:hover {
 /*
  * Blog posts
  */
+.ty_post {
+  margin-top: 30px;
+}
+
 .ty_post_snapshot {
   padding-bottom: 10px;
 }

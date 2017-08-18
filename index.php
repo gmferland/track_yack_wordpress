@@ -1,10 +1,13 @@
 <?php get_header(); ?>
-  <div class="row no-gutters">
-    <div class="col-xs-12 col-md-9 blog-main">
+  <div class="container ty_post">
+    <div class="col-xs-12 col-sm-2">
+      <?php get_sidebar(); ?>
+    </div>
+    <div class="col-xs-12 col-sm-7">
       <?php 
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
   	
-				get_template_part( 'content', get_post_format() );
+				get_template_part( 'content-summary', get_post_format() );
   
 			endwhile;?>
       <nav>
@@ -15,6 +18,5 @@
       </nav>
       <?php endif;?>
     </div>
-    <?php get_template_part('sidebar', 'social'); ?>
-  </div><
+  </div>
 <?php get_footer(); ?>

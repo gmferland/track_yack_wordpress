@@ -47,7 +47,7 @@
               <a href="<?php echo get_bloginfo( 'wpurl' );?>/daily/">Daily Takes</a>
             </li>
             <li class="hidden-sm">
-              <a href="<?php echo get_bloginfo( 'wpurl' );?>/schedule/">Schedule &amp Results</a>
+              <a href="<?php echo get_bloginfo( 'wpurl' );?>/weekly/">Weekly Dish</a>
             </li>
             <li class="hidden-sm">
               <a href="<?php echo get_bloginfo( 'wpurl' );?>/about/">About</a>
@@ -61,7 +61,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li class="visible-sm">
-                  <a href="<?php echo get_bloginfo( 'wpurl' );?>/schedule/">Schedule &amp Results</a>
+                  <a href="<?php echo get_bloginfo( 'wpurl' );?>/weekly/">Weekly Dish</a>
                 </li>
                 <li class="visible-sm">
                   <a href="<?php echo get_bloginfo( 'wpurl' );?>/about/">About</a>
@@ -73,12 +73,14 @@
             </li>
           </ul>
           <div class="visible-lg navbar-right ty_header_links">
-            <a href="/join-us/" role="button" class="btn btn-default ty_header_button">Join us!</a>
+            <a href="<?php echo get_option('facebook_url');?>"><i class="social fa fa-facebook fa-2x"></i></a>
+            <a href="<?php echo get_option('twitter_url');?>"><i class="social fa fa-twitter fa-2x"></i></a>
+            <a href="<?php echo get_bloginfo( 'wpurl' );?>/join-us/" role="button" class="btn btn-default ty_header_button">Join us!</a>
           </div>
         </div>
       </div>  
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid ty_content">
     <!-- Container tag closed in footer.php -->
   <!-- Body tag closed in footer.php -->
 <!-- Html tag closed in footer.php -->

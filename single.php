@@ -1,22 +1,22 @@
 <?php get_header(); ?>
-  <div class="row">
-    <div class="hidden-xs col-sm-2 col-md-2 col-lg-2">
+  <div class="container ty_post">
+    <div class="col-xs-12 col-sm-2">
       <?php get_sidebar(); ?>
     </div>
-    <div class="col-xs-9 col-sm-7 col-md-7 col-lg-7">
+    <div class="col-xs-12 col-sm-7">
       <?php 
         if ( have_posts() ) : while ( have_posts() ) : the_post();
           get_template_part( 'content-single', get_post_format() );
         endwhile; 
         the_author_meta( 'description' );
-        if ( comments_open() || get_comments_number() ) :
-        comments_template();
-        endif;
         endif; 
       ?>
     </div>
-    <div class="col-xs-12 col-sm-3 col-sm-3 col-md-3 col-lg-3">
-      <?php get_template_part('sidebar', 'social'); ?>
-    </div>
+    <nav>
+      <ul class="pager">
+        <li><?php next_posts_link( 'Previous' ); ?></li>
+        <li><?php previous_posts_link( 'Next' ); ?></li>
+      </ul>
+    </nav>
   </div>
 <?php get_footer(); ?>
