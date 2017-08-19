@@ -13,14 +13,6 @@
     <?php wp_head() ?>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
     <nav class="navbar navbar-full ty_header">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -41,13 +33,19 @@
               <a href="<?php echo get_bloginfo( 'wpurl' );?>">Home</a>
             </li>
             <li>
-              <a href="<?php echo get_bloginfo( 'wpurl' );?>/features/">Features</a>
+              <a href="<?php $category_id = get_cat_ID( 'feature' ); echo esc_url( get_category_link( $category_id ) ); ?>">
+                Features
+              </a>
             </li>
             <li>
-              <a href="<?php echo get_bloginfo( 'wpurl' );?>/daily/">Daily Takes</a>
+              <a href="<?php $category_id = get_cat_ID( 'daily' ); echo esc_url( get_category_link( $category_id ) ); ?>">
+                Daily Takes
+              </a>
             </li>
             <li class="hidden-sm">
-              <a href="<?php echo get_bloginfo( 'wpurl' );?>/weekly/">Weekly Dish</a>
+              <a href="<?php $category_id = get_cat_ID( 'weekly' ); echo esc_url( get_category_link( $category_id ) ); ?>">
+                Weekly Dish
+              </a>
             </li>
             <li class="hidden-sm">
               <a href="<?php echo get_bloginfo( 'wpurl' );?>/about/">About</a>
@@ -61,7 +59,9 @@
               </a>
               <ul class="dropdown-menu">
                 <li class="visible-sm">
-                  <a href="<?php echo get_bloginfo( 'wpurl' );?>/weekly/">Weekly Dish</a>
+                  <a href="<?php $category_id = get_cat_ID( 'weekly' ); echo esc_url( get_category_link( $category_id ) ); ?>">
+                    Weekly Dish
+                  </a>
                 </li>
                 <li class="visible-sm">
                   <a href="<?php echo get_bloginfo( 'wpurl' );?>/about/">About</a>
@@ -75,7 +75,7 @@
           <div class="visible-lg navbar-right ty_header_links">
             <a href="<?php echo get_option('facebook_url');?>"><i class="social fa fa-facebook fa-2x"></i></a>
             <a href="<?php echo get_option('twitter_url');?>"><i class="social fa fa-twitter fa-2x"></i></a>
-            <a href="<?php echo get_bloginfo( 'wpurl' );?>/join-us/" role="button" class="btn btn-default ty_header_button">Join us!</a>
+            <a href="<?php echo get_bloginfo( 'wpurl' );?>/join-us/" role="button" class="btn ty_button ty_header_button">Join us!</a>
           </div>
         </div>
       </div>  

@@ -5,12 +5,6 @@
           <a href="<?php echo get_option('facebook_url'); ?>"><i class="social fa fa-facebook fa-2x"></i></a>
           <a href="<?php echo get_option('twitter_url'); ?>"><i class="social fa fa-twitter fa-2x"></i></a>
           <p>Sign up for the TrackYack newsletter!</p>
-          <form class="input-group">
-            <input class="form-control" type="email" name="lastname" placeholder="Email">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Join us!</button>
-            </span>
-          </form>
         </div>
         <div class="col-md-3 ty_footer_section text-center">
           <h5>Browse by season:</h5>

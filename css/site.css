@@ -5,6 +5,7 @@ yellow #dea74c
 white #FFF
 
 backgrounds:
+light gray #eee
 dark gray #8c8989
 almost black #282a2b
 
@@ -17,7 +18,6 @@ light gray #bfbfbf */
  * Globals
  */
 h2 {
-  color: #333;
   padding-bottom: 4px;
 }
 
@@ -33,9 +33,6 @@ i.social {
  * Header
  */
 .ty_header {
-  position: fixed;
-  top: 0;
-  z-index: 100;
   background-color: #000;
   width: 100%;
   height: 67px;
@@ -95,8 +92,6 @@ i.social {
 /* Header "join us" button */
 .ty_header_button {
   background-color: #000;
-  color: #dea74c;
-  border: 2px solid #dea74c;
   width: 100px;
   padding: 10px;
   margin-left: 10px;
@@ -105,10 +100,19 @@ i.social {
   vertical-align: top;
 }
 
-.ty_header_button:hover {
+.ty_button {
+  color: #dea74c;
+  border: 2px solid #dea74c;
+}
+
+.ty_button:hover,
+.ty_button:focus {
+  color: #fff;
   background-color: #dea74c;
+}
+
+.ty_header_button:hover {
   color: #000;
-  border-color: #dea74c;
 }
 
 /* Medium screen dropdown menu */
@@ -183,9 +187,6 @@ i.social {
 /*
  * Main content
  */
-.ty_content {
-  margin-top: 67px;
-}
 
 /*
  * Search results
@@ -203,9 +204,27 @@ i.social {
 /*
 * Social sidebar
 */
-.ty_social {
-   text-align: center;
- }
+.ty_twitter {
+  margin-top: 30px;
+  text-align: center;
+  vertical-align: center;
+}
+
+.ty_twitter_image {
+  margin-left: -15px;
+}
+
+#twitter-banner {
+  width: 100vw;
+  height: auto;
+}
+
+.ty_twitter_timeline {
+  background-color: #fff;
+  position: relative;
+  vertical-align: middle;
+  right: -30px;
+}
 /* Sidebar modules for boxing content */
 
 /* Main sidebar */
@@ -296,6 +315,8 @@ i.social {
   color: #bfbfbf;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: -10px;
+  z-index: 100;
 }
 
 .ty_footer a {
