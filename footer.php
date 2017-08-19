@@ -1,12 +1,12 @@
     </div> <!-- Close container class -->
     <div class="container-fluid ty_footer">
       <div class="row">
-        <div class="col-md-3 ty_footer_section text-center">
+        <div class="col-sm-3 ty_footer_section text-center">
           <a href="<?php echo get_option('facebook_url'); ?>"><i class="social fa fa-facebook fa-2x"></i></a>
           <a href="<?php echo get_option('twitter_url'); ?>"><i class="social fa fa-twitter fa-2x"></i></a>
-          <p>Sign up for the TrackYack newsletter!</p>
+          <?php get_search_form(); ?>
         </div>
-        <div class="col-md-3 ty_footer_section text-center">
+        <div class="col-sm-3 ty_footer_section text-center">
           <h5>Browse by season:</h5>
           <ul class="list-unstyled">
             <li>
@@ -20,10 +20,10 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3 ty_footer_section text-center">
+        <div class="col-sm-3 ty_footer_section text-center">
           <h5>Browse by school:</h5>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <ul class="list-unstyled">
                 <li>
                   <a href="<?php echo get_bloginfo( 'wpurl' );?>/amherst/">Amherst</a>
@@ -45,7 +45,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <ul class="list-unstyled">
                 <li>
                   <a href="<?php echo get_bloginfo( 'wpurl' );?>/middlebury">Middlebury</a>
@@ -66,7 +66,7 @@
             </div>
           </div>
         </div>  
-        <div class="col-md-3 ty_footer_section text-center">
+        <div class="col-sm-3 ty_footer_section text-center">
           <h5>Recent posts:</h5>
           <?php $recentquery = new WP_Query( 'posts_per_page=6' ); ?>
           <ol class="list-unstyled"> 
@@ -78,7 +78,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-sm-12 text-center">
           <div class="ty_footer_text">
             <a href="<?php echo get_bloginfo( 'wpurl' );?>/privacy">Privacy Policy</a>
           </div>

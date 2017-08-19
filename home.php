@@ -44,8 +44,19 @@
     <div class="col-sm-8 ty_twitter_image">
       <img id="twitter-banner" src="<?php echo get_bloginfo( 'template_directory' );?>/images/ty_default_thumbnail.jpg" />
     </div>
-    <div class="col-sm-4">
-      <?php get_template_part('sidebar', 'social'); ?>
+    <div class="hidden-xs col-sm-4 ty_twitter_timeline">
+      <a class="twitter-timeline"
+        href="<?php echo get_option('twitter_url'); ?>"
+        data-width="100%"
+        data-height="93%">
+      Tweets by <?php echo get_option('twitter_user'); ?>
+      </a>
+      <a class="twitter-follow-button" 
+        href="<?php echo get_option('twitter_url'); ?>"
+        data-size="large"
+        data-show-count="false">
+        Follow <?php echo get_option('twitter_user'); ?>
+      </a>
     </div>
   </div>
   <script>
@@ -61,7 +72,8 @@
           $featuredWrapper.height($initialImageHeight);
         }
         $twitterImage = $('#twitter-banner');
-        $('.ty_twitter_timeline').height($twitterImage.height());
+        $twitterTimeline = $('.ty_twitter_timeline');
+        ($twitterImage && $twitterTimeline) && $twitterTimeline.height($twitterImage.height());
       }
       adjustImageContainer();
       $(window).resize(adjustImageContainer);
