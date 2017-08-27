@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-  <div class="container ty_post">
-    <div class="col-xs-12 col-sm-2">
+  <div class="container-fluid ty_post">
+    <div class="col-xs-12 col-sm-3">
       <?php get_sidebar(); ?>
     </div>
     <div class="col-xs-12 col-sm-7">
@@ -14,8 +14,8 @@
     </div>
     <nav>
       <ul class="pager">
-        <li><?php next_posts_link( 'Previous' ); ?></li>
-        <li><?php previous_posts_link( 'Next' ); ?></li>
+        <li><?php next_posts_link( 'Next' ); ?></li>
+        <li><?php previous_posts_link( 'Previous' ); ?></li>
       </ul>
     </nav>
   </div>

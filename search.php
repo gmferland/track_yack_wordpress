@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-  <div class="container ty_post">
-    <div class="col-xs-12 col-sm-2">
+  <div class="container-fluid ty_post">
+    <div class="col-xs-12 col-sm-3">
       <?php get_sidebar(); ?>
     </div>
     <div class="col-xs-12 col-sm-7 ty_search">
@@ -8,7 +8,7 @@
       <hr>
       <?php 
         if ( have_posts() ) : while ( have_posts() ) : the_post();
-          get_template_part( 'content-summary', get_post_format() );
+          get_template_part( 'content-snapshot', get_post_format() );
         endwhile; else : ?>
           <p>Sorry, nothing matched your search terms. Please try again.</p>
       <?php endif; ?>
