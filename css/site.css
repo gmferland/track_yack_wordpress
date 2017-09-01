@@ -19,9 +19,19 @@ light gray #bfbfbf */
  */
 body {
   overflow-x: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+p {
+  font-size: 18px;
+}
+
 h2 {
   padding-bottom: 4px;
+}
+
+h4 {
+  font-size: 22px;
 }
 
 h1 a,
@@ -40,8 +50,18 @@ h3 a:focus {
   text-decoration: none;
 }
 
-p a, p a:hover,
+p a {
+  color: #dea74c;
+}
+
+p a:hover,
 p a:focus {
+  text-decoration: underline;
+  color: #dea74c;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
   color: #dea74c;
 }
 
@@ -57,12 +77,28 @@ i.social {
   .ty_featured_caption h2 {
     font-size: 36px;
   }
+
+  #dailyTakes .carousel-inner .item {
+    height: 400px;
+  }
+
+  #dailyTakes .ty_recent_posts_button {
+    margin-bottom: 14%;
+  }
 }
 
 @media (max-width: 768px) {
   .ty_twitter_overlay h2,
   .ty_featured_caption h2 {
     font-size: 20px;
+  }
+
+  #dailyTakes .carousel-inner .item {
+    height: 175px;
+  }
+
+  #dailyTakes .ty_recent_posts_button {
+    margin-bottom: 5%;
   }
 }
 
@@ -227,6 +263,9 @@ i.social {
 /*
  * Main content
  */
+.ty_page_content {
+  margin-bottom: 20px;
+}
 
 /*
  * Search results
@@ -277,6 +316,7 @@ i.social {
   background-color: #fff;
   position: relative;
   vertical-align: middle;
+  z-index: 10;
 }
 /* Sidebar modules for boxing content */
 
@@ -327,10 +367,8 @@ i.social {
   height: 534px;
   padding-top: 12%;
   text-align: center;
-  position: absolute;
-  top: 67px;
-  left: 50%;
-  transform: translate(-50%);
+  position: relative;
+  top: 0px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -370,7 +408,45 @@ i.social {
   display: inline-block;
 }
 
- /* Pagination */
+/*
+ * Daily Takes Carousel
+ */
+#dailyTakes li {
+  background-color: #333;
+}
+
+#dailyTakes .carousel-control {
+  background-color: #fff;
+  text-shadow: none;
+  background-image: none;
+  color: #333;
+}
+
+#dailyTakes .carousel-inner .item {
+  background-color: #fff;
+}
+
+#dailyTakes .carousel-caption {
+  color: #333;
+  text-shadow: none;
+}
+
+/*
+ * Daily takes page
+ */
+.ty_daily_today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+/* Pagination */
+.pager a,
+.pager a:hover,
+.pager a:focus {
+  color: #dea74c;
+  text-decoration: none;
+}
 
 /*
  * Blog posts
@@ -385,28 +461,23 @@ i.social {
   height: auto;
 }
 
-.ty_post_snapshot {
-  padding-bottom: 10px;
-  text-align: left;
-}
-
+.ty_post_snapshot,
 .ty_post_summary {
   padding-bottom: 10px;
+  text-align: left;
+  text-shadow: none;
 }
 
-.ty_post_snapshot_thumbnail img {
-  padding: 10px;
-  border-radius: 50%;
-  width: auto;
-  height: 100%;
+.ty_post_summary h3 {
+  color: #333;
 }
 
-.pager a,
-.pager a:hover,
-.pager a:focus {
+.ty_post_summary h3 a:hover,
+.ty_post_summary h3 a:focus {
   color: #dea74c;
   text-decoration: none;
 }
+
 /*
 * Footer
 */

@@ -55,4 +55,14 @@
       </li>
     </ul>
   </div>
+  <script>
+    jQuery(document).ready(function() {
+      var $ = jQuery;
+      function closeSideCollapse() {
+        if ($(window).width() < 768) $('.ty_main_sidebar .collapse').removeClass('in');
+      }
+      closeSideCollapse();
+      $(window).resize(closeSideCollapse);
+    });
+  </script>
 </div><!-- /.blog-sidebar -->

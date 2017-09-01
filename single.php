@@ -6,17 +6,16 @@
     <div class="col-xs-12 col-sm-7">
       <?php 
         if ( have_posts() ) : while ( have_posts() ) : the_post();
-          get_template_part( 'content-single', get_post_format() );
-        endwhile; 
+          get_template_part( 'content-single', get_post_format() ); ?>
+        <nav>
+          <ul class="pager">
+            <li><?php next_post_link( '%link', 'Newer', TRUE ); ?></li>
+            <li><?php previous_post_link( '%link', 'Older', TRUE ); ?></li>
+          </ul>
+        </nav>
+        <?php endwhile; 
         the_author_meta( 'description' );
-        endif; 
-      ?>
+        endif; ?>
     </div>
-    <nav>
-      <ul class="pager">
-        <li><?php next_posts_link( 'Next' ); ?></li>
-        <li><?php previous_posts_link( 'Previous' ); ?></li>
-      </ul>
-    </nav>
   </div>
 <?php get_footer(); ?>

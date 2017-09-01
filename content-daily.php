@@ -5,6 +5,6 @@
       } ?>
   </a>
     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    <h4><?php the_date(); ?></h4>
+    <h4><?php echo get_the_date(); ?></h4>
   <?php the_content(); ?>
 </div>

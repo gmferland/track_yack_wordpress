@@ -8,7 +8,7 @@
       <hr>
       <?php 
         if ( have_posts() ) : while ( have_posts() ) : the_post();
-          get_template_part( 'content-snapshot', get_post_format() );
+          get_template_part( 'content-summary', get_post_format() );
         endwhile; else : ?>
           <p>Sorry, nothing matched your search terms. Please try again.</p>
       <?php endif; ?>

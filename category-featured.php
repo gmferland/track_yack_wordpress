@@ -5,12 +5,12 @@
       <h4><?php echo category_description(); ?></h4> 
       <?php 
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
-				get_template_part( 'content-summary', get_post_format() );
+				get_template_part( 'content-snapshot', get_post_format() );
 			endwhile;?>
       <nav>
         <ul class="pager">
+          <li><?php previous_posts_link( 'Previous' ); ?></li>  
           <li><?php next_posts_link( 'Next' ); ?></li>
-          <li><?php previous_posts_link( 'Previous' ); ?></li>
         </ul>
       </nav>
       <?php endif;?>
