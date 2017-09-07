@@ -1,36 +1,40 @@
 <?php get_header(); ?>
+  <div class="ty_featured">
+    <div class="ty_featured_image" style="background-color: #dea74c;">
+      <div class="container ty_banner_caption">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="ty_daily_today">
+              <h1 style="color:#333;"><?php single_cat_title(); ?></h1>
+              <h4 style="color:#fff;"><?php echo category_description(); ?></h4> 
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="ty_daily_today">
+              <div class="row">  
+                <?php 
+                $args = array( 'posts_per_page' => 3, 'category_name' => 'dailytakes' );
+                $recentTakes = get_posts( $args );
+                foreach( $recentTakes as $post ):
+                  setup_postdata( $post );
+                  $do_not_duplicate[] = $post->ID;?>
+                    <div class="col-xs-12 ty_daily_header text-right">
+                      <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                      <p><?php echo get_the_date(); ?></p>
+                    </div>
+                  <?php endforeach; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container ty_post">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
       <div class="row">
-        <div class="col-xs-12">
-          <h1><?php single_cat_title(); ?></h1>
-          <h4><?php echo category_description(); ?></h4> 
-          <hr>
-        </div>
-      </div>
-      <div class="row">
-      <?php 
-      global $query_string;
-      query_posts( $query_string . '&year=' . date('Y') . '&monthnum=' . date('n') . '&day=' . date('j'));
-      if ( have_posts() ) :?>
-        <div class="col-sm-4 text-center ty_daily_today">
-          <h2>Today:</h2>
-        </div>
-        <div class="col-sm-8">
-          <div class="row">
-        <?php while ( have_posts() ) : the_post();
-        $do_not_duplicate[] = $post->ID;?>
-            <div class="col-xs-12">
-              <?php get_template_part( 'content-summary', get_post_format() ); ?>
-            </div>
-        <?php endwhile; ?>
-          </div>
-        </div>
-      <?php endif;?>
-      </div>
-      <hr>
-      <div class="row">
         <?php 
+          global $query_string;
           query_posts($query_string . '&posts_per_page=' . (6 + count($do_not_duplicate)));
           $count = 0;
           if ( have_posts() ) : while ( have_posts() ) : the_post();

@@ -435,9 +435,16 @@ i.social {
  * Daily takes page
  */
 .ty_daily_today {
+  height: 534px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.ty_daily_header a:hover,
+.ty_daily_header a:focus {
+  color: #fff;
+  text-decoration: none;
 }
  
 /* Pagination */
