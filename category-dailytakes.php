@@ -5,8 +5,13 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="ty_daily_today">
-              <h1 style="color:#333;"><?php single_cat_title(); ?></h1>
-              <h4 style="color:#fff;"><?php echo category_description(); ?></h4> 
+              <div class="visible-xs text-right">
+                <h1 style="color:#fff;"><?php single_cat_title(); ?></h1>
+              </div>
+              <div class="hidden-xs">
+                <h1 style="color:#333;"><?php single_cat_title(); ?></h1>
+                <h4 style="color:#fff;"><?php echo category_description(); ?></h4> 
+              </div>
             </div>
           </div>
           <div class="col-sm-6">

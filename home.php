@@ -85,6 +85,9 @@
         global $query_string;
         query_posts( $query_string . '&category_name=weeklyrundown&tag=pow&posts_per_page=2');
         if ( have_posts() ) :?>
+          <div class="col-xs-12 visible-xs text-center">
+            <h2>Performers of the Week</h2>
+          </div>
           <div class="col-sm-8">
             <div class="row">
           <?php while ( have_posts() ) : the_post();?>
@@ -94,7 +97,7 @@
           <?php endwhile; ?>
             </div>
           </div>
-          <div class="col-sm-4 text-center ty_daily_today">
+          <div class="hidden-xs col-sm-4 text-center ty_flex_center">
             <h2>Performers of the Week</h2>
           </div>
         <?php endif;?>
@@ -104,7 +107,10 @@
         global $query_string;
         query_posts( $query_string . '&category_name=weeklyrundown&tag=coverage&posts_per_page=2');
         if ( have_posts() ) :?>
-          <div class="col-sm-4 text-center ty_daily_today">
+          <div class="col-xs-12 visible-xs text-center">
+            <h2>Meet Coverage</h2>
+          </div>
+          <div class="hidden-xs col-sm-4 text-center ty_flex_center">
             <h2>Meet Coverage</h2>
           </div>
           <div class="col-sm-8">

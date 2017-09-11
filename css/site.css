@@ -408,6 +408,12 @@ i.social {
   display: inline-block;
 }
 
+.ty_flex_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*
  * Daily Takes Carousel
  */
@@ -434,8 +440,17 @@ i.social {
 /*
  * Daily takes page
  */
+@media (max-width: 768px) {
+  .ty_daily_today {
+    height: 70px;
+  }
+}
+@media (min-width: 769px) {
+  .ty_daily_today {
+    height: 534px;
+  }
+}
 .ty_daily_today {
-  height: 534px;
   display: flex;
   flex-direction: column;
   justify-content: center;
