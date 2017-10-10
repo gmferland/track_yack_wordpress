@@ -7,7 +7,7 @@
     </a>
     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
     <p>
-      <?php echo get_the_date(); ?> by <?php the_author(); ?>
+      <?php echo get_the_date(); if ( in_category('featured') ) echo 'by', get_the_author() ; ?>
     </p>
     <?php the_excerpt(); ?>
   </div>
