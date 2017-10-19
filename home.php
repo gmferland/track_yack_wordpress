@@ -9,6 +9,12 @@
   endforeach; 
   wp_reset_postdata();?>
   <div class="container-fluid ty_content_home">
+    <div class="text-center">  
+      <h1 class="ty_recent_posts_title">Recent Posts</h1>
+      <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
+        See All Posts
+      </a>
+    </div>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 ty_recent_posts">
         <?php $recentquery = new WP_Query( 'posts_per_page=6' ); 
@@ -19,40 +25,60 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-8">
-        <h1 class="ty_recent_posts_title">
-          <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>">
-            Daily Takes
-          </a>
-        </h1>
-        <p>
-          <?php echo category_description( get_category_by_slug('dailytakes')->term_id ); ?> 
-        </p>
-        <div>
-          <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
-            See all Daily Takes
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-4">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-      </div>
-      <div class="col-sm-8">
-        <h1 class="ty_recent_posts_title">
-          <a href="<?php echo esc_url( $home_url . '/category/weeklyrundown/' ); ?>">
-            Weekly Rundown
-          </a>
-        </h1>
-        <p>
-          <?php echo category_description( get_category_by_slug('dailytakes')->term_id ); ?> 
-        </p>
-        <div>
-          <a href="<?php echo esc_url( $home_url . '/category/weeklyrundown/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
-            See all Weekly Rundown
-          </a>
+      <div class="ty_featured_image" style="background-color: #eee;">
+        <div class="container ty_browse">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h1>Browse By Category</h1>
+            </div>  
+          </div>
+          <div class="row">
+            <div class="col-md-4 ty_category_description text-center">
+              <h1 class="ty_recent_posts_title">
+                <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>">
+                  Daily Takes
+                </a>
+              </h1>
+              <p>
+                <?php echo category_description( get_category_by_slug('dailytakes')->term_id ); ?> 
+              </p>
+              <div>
+                <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
+                  See all Daily Takes
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 ty_category_description text-center">
+              <h1 class="ty_recent_posts_title">
+                <a href="<?php echo esc_url( $home_url . '/category/weeklyrundown/' ); ?>">
+                  Weekly Rundown
+                </a>
+              </h1>
+              <p>
+                <?php echo category_description( get_category_by_slug('dailytakes')->term_id ); ?> 
+              </p>
+              <div>
+                <a href="<?php echo esc_url( $home_url . '/category/weeklyrundown/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
+                  See all Weekly Rundown
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 ty_category_description text-center">
+              <h1 class="ty_recent_posts_title">
+                <a href="<?php echo esc_url( $home_url . '/category/featured/' ); ?>">
+                  Featured
+                </a>
+              </h1>
+              <p>
+                <?php echo category_description( get_category_by_slug('featured')->term_id ); ?> 
+              </p>
+              <div>
+                <a href="<?php echo esc_url( $home_url . '/category/featured/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
+                  See all Featured
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

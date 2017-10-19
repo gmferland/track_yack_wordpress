@@ -77,28 +77,12 @@ i.social {
   .ty_featured_caption h2 {
     font-size: 36px;
   }
-
-  #dailyTakes .carousel-inner .item {
-    height: 400px;
-  }
-
-  #dailyTakes .ty_recent_posts_button {
-    margin-bottom: 14%;
-  }
 }
 
 @media (max-width: 768px) {
   .ty_twitter_overlay h2,
   .ty_featured_caption h2 {
     font-size: 20px;
-  }
-
-  #dailyTakes .carousel-inner .item {
-    height: 175px;
-  }
-
-  #dailyTakes .ty_recent_posts_button {
-    margin-bottom: 5%;
   }
 }
 
@@ -400,18 +384,25 @@ i.social {
 
 .ty_recent_posts_title {
   display: inline-block;
-  margin-right: 10%;
 }
 
 .ty_recent_posts_button {
-  margin-top: -15px;
   display: inline-block;
 }
 
 .ty_flex_center {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.ty_browse {
+  min-height: 534px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /*
