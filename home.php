@@ -9,19 +9,13 @@
   endforeach; 
   wp_reset_postdata();?>
   <div class="container-fluid ty_content_home">
-    <h1 class="ty_recent_posts_title">
-      Recent Posts
-    </h1>
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 ty_recent_posts">
+      <div class="col-sm-10 col-sm-offset-1 ty_recent_posts">
         <?php $recentquery = new WP_Query( 'posts_per_page=6' ); 
-          if($recentquery->have_posts()): while($recentquery->have_posts()): $recentquery->the_post();?>
-        <div class="row">
-          <div class="col-xs-12">
-            <?php get_template_part('content-summary', get_post_format());?>
-          </div>
-        </div>
-        <?php endwhile; endif;?>
+          if($recentquery->have_posts()): while($recentquery->have_posts()): $recentquery->the_post();
+          if ($post->ID == $do_not_duplicate) continue;?>
+        <?php get_template_part('content-snapshot', get_post_format());
+          endwhile; endif;?>
       </div>
     </div>
     <div class="row">

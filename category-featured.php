@@ -5,7 +5,7 @@
       <h4><?php echo category_description(); ?></h4> 
       <?php 
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
-				get_template_part( 'content-snapshot', get_post_format() );
+				get_template_part( 'content-feature', get_post_format() );
 			endwhile;?>
       <nav>
         <ul class="pager">
