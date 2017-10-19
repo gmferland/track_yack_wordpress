@@ -11,9 +11,7 @@
   <div class="container-fluid ty_content_home">
     <div class="text-center">  
       <h1 class="ty_recent_posts_title">Recent Posts</h1>
-      <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
-        See All Posts
-      </a>
+      <hr>
     </div>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 ty_recent_posts">
