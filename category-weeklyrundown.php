@@ -6,17 +6,17 @@
       <div class="col-xs-12 visible-xs text-center">
         <h2>Performers of the Week</h2>
       </div>
+      <div class="col-sm-8">
+        <div class="row">
       <?php foreach( $recentTakes as $post ):
         setup_postdata( $post );
         $do_not_duplicate[] = $post->ID;?>
-      <div class="col-sm-8">
-        <div class="row">
           <div class="col-sm-6">
             <?php get_template_part( 'content-summary', get_post_format() ); ?>
           </div>
+      <?php endforeach;?>
         </div>
       </div>
-      <?php endforeach;?>
       <div class="hidden-xs col-sm-4 text-center ty_flex_center">
         <h2>Performers of the Week</h2>
       </div>
@@ -30,31 +30,32 @@
       <div class="hidden-xs col-sm-4 text-center ty_flex_center">
         <h2>Meet Coverage</h2>
       </div>
+      <div class="col-sm-8">
+        <div class="row">
       <?php foreach( $recentTakes as $post ):
         setup_postdata( $post );
         $do_not_duplicate[] = $post->ID;?>
-      <div class="col-sm-8">
-        <div class="row">
           <div class="col-sm-6">
             <?php get_template_part( 'content-summary', get_post_format() ); ?>
           </div>
+      <?php endforeach;?>
         </div>
       </div>
-      <?php endforeach;?>
     </div>
+    <hr>
     <div class="row">
     <?php 
-      $args = array( 'posts_per_page' => 6 + count($do_not_duplicate), 'category_name' => 'weeklyrundown' );
-      $catQuery = new WPQuery($args);    
-      $count = 0;
-      if ( $catQuery->have_posts() ) : while ( $catQuery->have_posts() ) : $catQuery->the_post();
-        if (in_array($post->ID, $do_not_duplicate)) continue;?>
-      <div class="col-sm-4">
-        <?php get_template_part( 'content-summary', get_post_format() ); ?>
-      </div>
-    <?php if ($count % 3 == 2) {?>
-      </div><div class="row">
-    <?php } $count++; endwhile; ?>
+    global $query_string;
+    query_posts($query_string . '&posts_per_page=' . (6 + count($do_not_duplicate)));
+    $count = 0;
+    if ( have_posts() ) : while ( have_posts() ) : the_post();
+      if (in_array($post->ID, $do_not_duplicate)) continue;?>
+        <div class="col-sm-4">
+          <?php get_template_part( 'content-summary', get_post_format() ); ?>
+        </div>
+        <?php if ($count % 3 == 2) {?>
+          </div><div class="row">
+        <?php } $count++; endwhile; ?>
     </div>
     <div class="col-xs-12 text-center">
       <nav>
