@@ -15,11 +15,20 @@
     </div>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 ty_recent_posts">
-        <?php $recentquery = new WP_Query( 'posts_per_page=6' ); 
-          if($recentquery->have_posts()): while($recentquery->have_posts()): $recentquery->the_post();
+        <?php query_posts($query_string . '&posts_per_page=6');
+          if(have_posts()): while(have_posts()): the_post();
           if ($post->ID == $do_not_duplicate) continue;?>
         <?php get_template_part('content-snapshot', get_post_format());
-          endwhile; endif;?>
+          endwhile; ?>
+        <div class="col-xs-12 text-center">
+          <nav>
+            <ul class="pager">
+              <li><?php previous_posts_link( 'Previous' ); ?></li>
+              <li><?php next_posts_link( 'Next' ); ?></li>
+            </ul>
+          </nav>
+        </div>
+        <?php endif;?>
       </div>
     </div>
     <div class="row">
@@ -53,7 +62,7 @@
                 </a>
               </h1>
               <p>
-                <?php echo category_description( get_category_by_slug('dailytakes')->term_id ); ?> 
+                <?php echo category_description( get_category_by_slug('weeklyrundown')->term_id ); ?> 
               </p>
               <div>
                 <a href="<?php echo esc_url( $home_url . '/category/weeklyrundown/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
