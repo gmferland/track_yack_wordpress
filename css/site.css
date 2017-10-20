@@ -90,7 +90,7 @@ i.social {
  * Header
  */
 .ty_header {
-  background-color: #000;
+  background-color: #161616;
   width: 100%;
   height: 67px;
   padding-top: 10px;
@@ -144,13 +144,13 @@ i.social {
 .ty_header_links li a:active,
 .ty_header_links li a:focus {
   color: #dea74c;
-  background-color: #000;
+  background-color: #161616;
   border-bottom: 4px solid #dea74c;
 }
 
 /* Header "join us" button */
 .ty_header_button {
-  background-color: #000;
+  background-color: #161616;
   width: 100px;
   padding: 10px;
   margin-left: 10px;
@@ -171,18 +171,18 @@ i.social {
 }
 
 .ty_header_button:hover {
-  color: #000;
+  color: #161616;
 }
 
 /* Medium screen dropdown menu */
 .ty_header_dropdown_med {
-  background-color: #000;
+  background-color: #161616;
   color: #FFF;
 }
 
 .ty_header_dropdown_med a:focus {
   color: #FFF;
-  background-color: #000 !important;
+  background-color: #161616 !important;
   border: none;
 }
 
@@ -191,7 +191,7 @@ i.social {
 }
 
 .ty_header_dropdown_med .dropdown-menu {
-  background-color: #000;
+  background-color: #161616;
   color: #FFF;
 }
 
@@ -204,7 +204,7 @@ i.social {
 /* Small screen dropdown menu */
 .ty_header_dropdown_small {
   border: 2px solid #dea74c;
-  background-color: #000;
+  background-color: #161616;
   margin-top: 4px;
   margin-left: 50px;
   float: left;
@@ -220,7 +220,7 @@ i.social {
   right: 0;
   margin-left: -1px;
   margin-right: -1px;
-  background-color: #000;
+  background-color: #161616;
   color: #FFF;
   z-index: 1000;
   text-align: center;
@@ -406,36 +406,8 @@ i.social {
 }
 
 /*
- * Daily Takes Carousel
- */
-#dailyTakes li {
-  background-color: #333;
-}
-
-#dailyTakes .carousel-control {
-  background-color: #fff;
-  text-shadow: none;
-  background-image: none;
-  color: #333;
-}
-
-#dailyTakes .carousel-inner .item {
-  background-color: #fff;
-}
-
-#dailyTakes .carousel-caption {
-  color: #333;
-  text-shadow: none;
-}
-
-/*
  * Daily takes page
  */
-@media (max-width: 768px) {
-  .ty_daily_today {
-    height: 70px;
-  }
-}
 @media (min-width: 769px) {
   .ty_daily_today {
     height: 534px;
