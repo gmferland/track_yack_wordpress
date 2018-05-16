@@ -79,6 +79,7 @@
         <div class="col-xs-12 text-center">
           <a href="<?php echo get_option('facebook_url'); ?>"><i class="social fa fa-facebook fa-2x"></i></a>
           <a href="<?php echo get_option('twitter_url'); ?>"><i class="social fa fa-twitter fa-2x"></i></a>
+          <a href="<?php echo get_option('instagram_url');?>"><i class="social fa fa-instagram fa-2x"></i></a>
           <a href="mailto:track@trackyack.com"><i class="social fa fa-envelope-o fa-2x"></i></a>
         </div>
       </div>

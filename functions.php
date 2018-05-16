@@ -35,18 +35,26 @@ function custom_settings_page() { ?>
 
 // Twitter
 function setting_twitter_url() { ?>
-  <input type="text" name="twitter_url" id="twitter_url" placeholder="https://twitter.com/username"value="<?php echo get_option('twitter_url'); ?>" />
+  <input type="text" name="twitter_url" id="twitter_url" placeholder="ex: https://twitter.com/username"value="<?php echo get_option('twitter_url'); ?>" />
 <?php }
 function setting_twitter_user() { ?>
-  <input type="text" name="twitter_user" id="twitter_user" placeholder="@username" value="<?php echo get_option( 'twitter_user' ); ?>" />
+  <input type="text" name="twitter_user" id="twitter_user" placeholder="ex: @username" value="<?php echo get_option( 'twitter_user' ); ?>" />
 <?php }
 
 // Facebook
 function setting_facebook_url() { ?>
-  <input type="text" name="facebook_url" id="facebook_url" placeholder="https://www.facebook.com/username" value="<?php echo get_option('facebook_url'); ?>" />
+  <input type="text" name="facebook_url" id="facebook_url" placeholder="ex: https://www.facebook.com/username" value="<?php echo get_option('facebook_url'); ?>" />
 <?php }
 function setting_facebook_user() { ?>
-  <input type="text" name="facebook_user" id="facebook_user" placeholder="User Name" value="<?php echo get_option( 'facebook_user' ); ?>" />
+  <input type="text" name="facebook_user" id="facebook_user" placeholder="ex: User Name" value="<?php echo get_option( 'facebook_user' ); ?>" />
+<?php }
+
+// Instagram
+function setting_instagram_url() { ?>
+  <input type="text" name="instagram_url" id="instagram_url" placeholder="ex: https://www.instagram.com/username" value="<?php echo get_option('instagram_url'); ?>" />
+<?php }
+function setting_instagram_user() { ?>
+  <input type="text" name="instagram_user" id="instagram_user" placeholder="ex: username" value="<?php echo get_option( 'instagram_user' ); ?>" />
 <?php }
 
 function custom_settings_page_setup() {
@@ -55,11 +63,15 @@ function custom_settings_page_setup() {
   add_settings_field( 'twitter_url', 'Twitter URL', 'setting_twitter_url', 'theme-options', 'section-social' );
   add_settings_field( 'facebook_user', 'Facebook username', 'setting_facebook_user', 'theme-options', 'section-social' );
   add_settings_field( 'facebook_url', 'Facebook URL', 'setting_facebook_url', 'theme-options', 'section-social' );
+  add_settings_field( 'instagram_user', 'Instagram username', 'setting_instagram_user', 'theme-options', 'section-social' );
+  add_settings_field( 'instagram_url', 'Instagram URL', 'setting_instagram_url', 'theme-options', 'section-social' );
 
   register_setting('section-social', 'twitter_user');
   register_setting('section-social', 'twitter_url');
   register_setting('section-social', 'facebook_user');
   register_setting('section-social', 'facebook_url');
+  register_setting('section-social', 'instagram_user');
+  register_setting('section-social', 'instagram_url');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
