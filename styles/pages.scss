@@ -1,0 +1,23 @@
+@import './variables.scss';
+/*
+ * Daily takes page
+ */
+.ty_daily_today {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &_header a {
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .ty_daily_today {
+    height: 534px;
+  }
+}

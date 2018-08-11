@@ -45,9 +45,6 @@
     &_button {
       display: inline-block;
     }
-    &_button {
-      @include ty_button;
-    }
   }
   .ty_flex_center {
     display: flex;
@@ -55,23 +52,29 @@
     justify-content: center;
     align-items: center;
   }
-  .ty_browse {
-    min-height: 534px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+}
+
+.ty_browse {
+  min-height: 534px;
+  padding-bottom: 30px;
+  background-color: $light-gray-2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .ty_recent_posts_button {
+    @include ty_button;
   }
 }
 
 @media (min-width: 769px) {
   .ty_featured {
-    .ty_featured_caption h1 {
-      font-size: 48px;
-    }
-
-    .ty_featured_caption h2 {
-      font-size: 36px;
+    &_caption {
+      h1 {
+        font-size: 48px;
+      }
+      h2 {
+        font-size: 36px;
+      }
     }
   }
 }

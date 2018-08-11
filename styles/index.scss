@@ -51,6 +51,14 @@ i.social {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  &.x-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &.y-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .container {
@@ -59,4 +67,9 @@ i.social {
 
 .ty_page_content {
   margin-bottom: 20px;
+}
+
+.ty_search a {
+  color: $black;
+  @include hover_link(none);
 }

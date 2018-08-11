@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-  <div class="ty_featured">
+  <div class="ty_container x-padding y-padding ty_featured">
     <div class="ty_featured_image" style="background-color: #dea74c;">
-      <div class="ty_container ty_banner_caption">
+      <div>
         <div class="row">
           <div class="col-sm-6">
             <div class="ty_daily_today">

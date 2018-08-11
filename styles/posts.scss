@@ -1,0 +1,40 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.ty_main_sidebar {
+  padding-top: 15px;
+  text-align: center;
+  &_list a {
+    color: $dark-gray;
+    @include hover_link(none);
+  }
+  &_title {
+    color: $black;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.ty_post {
+  padding: 30px 0;
+  background-color: $white;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &_snapshot,
+  &_summary {
+    padding-bottom: 10px;
+    text-align: left;
+    text-shadow: none;
+  }
+
+  &_summary h3 {
+    color: $black;
+    @include hover_link(none);
+  }
+}
