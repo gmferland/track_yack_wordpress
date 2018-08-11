@@ -2,11 +2,11 @@
 
 // Add scripts and stylesheets
 function trackyack_scripts() {
-  wp_enqueue_style( 'app', get_template_directory_uri() . '/build/app.1a7258cc010b89d4f3cf.css');
+  wp_enqueue_style( 'app', get_template_directory_uri() . '/build/app.806c8ee08dcd8aff9e34.css');
   wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '3.3.6' );
   wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/styles/font-awesome/css/font-awesome.min.css' );
   // wp_enqueue_script( 'app', get_template_directory_uri() . '/build/app.cb5c5a37e00d1379cf2e.js', array(), false, true );
-  wp_enqueue_script( 'vendor', get_template_directory_uri() . '/build/vendor.50ebd42e92a63188c71b.js', array( 'jquery' ), false, true );
+  wp_enqueue_script( 'vendor', get_template_directory_uri() . '/build/vendor.296f35d974c334a46149.js', array( 'jquery' ), false, true );
 }
 
 add_action( 'wp_enqueue_scripts', 'trackyack_scripts' );

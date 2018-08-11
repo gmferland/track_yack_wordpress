@@ -1,0 +1,73 @@
+@import './variables.scss';
+
+.ty_footer {
+  background-color: $almost-black;
+  color: $light-gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+    color: $light-gray;
+    padding-bottom: 4px;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .ty_footer_icon {
+    max-width: 40px;
+  }
+
+  .ty_footer_text {
+    display: inline-block;
+    border-right: 1px solid $light-gray;
+    padding-left: 7px;
+    padding-right: 12px;
+    margin-bottom: 6px;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 8px 8px;
+    &.center {
+      justify-content: center;
+    }
+    &.left {
+      justify-content: flex-start;
+    }
+    > div {
+      > a {
+        margin-right: 30px;
+      }
+      &:last-child > a {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .ty_footer {
+    .ty_footer_section {
+      text-align: center;
+    }
+
+    .footer-row {
+      display: block;
+      > div {
+        > a {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
