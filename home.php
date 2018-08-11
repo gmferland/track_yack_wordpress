@@ -90,26 +90,28 @@
       </div>
     </div>
   </div>
-  <div class="row ty_twitter">
-    <div class="col-sm-8 ty_twitter_image">
-      <img id="twitter-banner" src="<?php echo esc_url($theme_url);?>/images/twitter-banner.jpg" />
-      <div class="ty_twitter_overlay">
-        <h2>Follow TrackYack on twitter for the latest NESCAC XC/TF news and results!</h2>
-        <a class="twitter-follow-button" 
+  <div class="ty_container">
+    <div class="ty_twitter">
+      <div class="ty_twitter_image">
+        <img id="twitter-banner" src="<?php echo esc_url($theme_url);?>/images/twitter-banner.jpg" />
+        <div class="ty_twitter_overlay">
+          <h2>Follow TrackYack on twitter for the latest NESCAC XC/TF news and results!</h2>
+          <a class="twitter-follow-button" 
+            href="<?php echo get_option('twitter_url'); ?>"
+            data-size="large"
+            data-show-count="false">
+            Follow <?php echo get_option('twitter_user'); ?>
+          </a>
+        </div>
+      </div>
+      <div class="hidden-xs ty_twitter_timeline">
+        <a class="twitter-timeline"
           href="<?php echo get_option('twitter_url'); ?>"
-          data-size="large"
-          data-show-count="false">
-          Follow <?php echo get_option('twitter_user'); ?>
+          data-width="100%"
+          data-height="100%">
+        Tweets by <?php echo get_option('twitter_user'); ?>
         </a>
       </div>
-    </div>
-    <div class="hidden-xs col-sm-4 ty_twitter_timeline">
-      <a class="twitter-timeline"
-        href="<?php echo get_option('twitter_url'); ?>"
-        data-width="100%"
-        data-height="100%">
-      Tweets by <?php echo get_option('twitter_user'); ?>
-      </a>
     </div>
   </div>
 <?php get_footer(); ?>
