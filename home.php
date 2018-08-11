@@ -8,7 +8,7 @@
 	  get_template_part( 'content-jumbotron', get_post_format() );
   endforeach; 
   wp_reset_postdata();?>
-  <div class="container-fluid ty_content_home">
+  <div class="ty_container ty_content_home">
     <div class="text-center">  
       <h1 class="ty_recent_posts_title">Recent Posts</h1>
       <hr>
@@ -33,7 +33,7 @@
     </div>
     <div class="row">
       <div class="ty_featured_image" style="background-color: #eee;">
-        <div class="container ty_browse">
+        <div class="ty_container ty_browse">
           <div class="row">
             <div class="col-xs-12 text-center">
               <h1>Browse By Category</h1>
@@ -50,7 +50,7 @@
                 <?php echo category_description( get_category_by_slug('dailytakes')->term_id ); ?> 
               </p>
               <div>
-                <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
+                <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>" class="btn ty_recent_posts_button" role="button">
                   See all Daily Takes
                 </a>
               </div>
@@ -65,7 +65,7 @@
                 <?php echo category_description( get_category_by_slug('weeklyrundown')->term_id ); ?> 
               </p>
               <div>
-                <a href="<?php echo esc_url( $home_url . '/category/weeklyrundown/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
+                <a href="<?php echo esc_url( $home_url . '/category/weeklyrundown/' ); ?>" class="btn ty_recent_posts_button" role="button">
                   See all Weekly Rundown
                 </a>
               </div>
@@ -80,7 +80,7 @@
                 <?php echo category_description( get_category_by_slug('featured')->term_id ); ?> 
               </p>
               <div>
-                <a href="<?php echo esc_url( $home_url . '/category/featured/' ); ?>" class="btn ty_button ty_recent_posts_button" role="button">
+                <a href="<?php echo esc_url( $home_url . '/category/featured/' ); ?>" class="btn ty_recent_posts_button" role="button">
                   See all Featured
                 </a>
               </div>
@@ -112,16 +112,4 @@
       </a>
     </div>
   </div>
-  <script>
-    jQuery(document).ready(function() {
-      var $ = jQuery;
-      function adjustTwitterContainer() {
-        $twitterImage = $('#twitter-banner');
-        $twitterTimeline = $('.ty_twitter_timeline');
-        if ($twitterImage && $twitterTimeline) $twitterTimeline.height($twitterImage.height());
-      }
-      adjustTwitterContainer();
-      $(window).resize(adjustTwitterContainer);
-    });
-  </script>
 <?php get_footer(); ?>

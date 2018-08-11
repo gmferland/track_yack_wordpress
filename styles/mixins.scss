@@ -9,3 +9,11 @@
     background-color: $gold;
   }
 }
+
+@mixin hover_link($text_decoration) {
+  &:hover,
+  &:focus {
+    color: $gold;
+    text-decoration: $text_decoration;
+  }
+}

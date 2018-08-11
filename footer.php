@@ -1,5 +1,5 @@
     <div class="ty_footer">
-      <div class="container">
+      <div class="ty_container">
         <div class="row">
           <div class="col-sm-5 ty_footer_section">
             <div class="row">

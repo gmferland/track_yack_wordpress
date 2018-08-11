@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="container ty_post">
+  <div class="ty_container ty_post">
     <div class="col-xs-12 text-center">
       <img src="<?php echo esc_url( $theme_url );?>/images/whoops.jpeg" />
       <h1>Whoops!</h1>

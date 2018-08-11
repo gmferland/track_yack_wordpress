@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <div class="ty_featured">
     <div class="ty_featured_image" style="background-color: #dea74c;">
-      <div class="container ty_banner_caption">
+      <div class="ty_container ty_banner_caption">
         <div class="row">
           <div class="col-sm-6">
             <div class="ty_daily_today">
@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-  <div class="container ty_post">
+  <div class="ty_container ty_post">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
       <div class="row">
         <?php 

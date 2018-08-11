@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="container ty_post">
+  <div class="ty_container ty_post">
     <div class="row">
     <?php $args = array( 'posts_per_page' => 2, 'tag' => 'pow' );
       $recentTakes = get_posts( $args );?>

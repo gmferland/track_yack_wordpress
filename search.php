@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="container-fluid ty_post">
+  <div class="ty_container ty_post">
     <div class="col-xs-12 col-sm-3">
       <?php get_sidebar(); ?>
     </div>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="container ty_post">
+  <div class="ty_container ty_post">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
       <h1><?php single_cat_title(); ?></h1>
       <h4><?php echo category_description(); ?></h4> 
