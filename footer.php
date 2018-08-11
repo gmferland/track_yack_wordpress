@@ -101,12 +101,6 @@
         </div>
       </div>      
     </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?php echo get_bloginfo( 'template_directory' );?>/js/twitter.js"></script>
     <?php wp_footer(); ?>
   </body>
 </html>

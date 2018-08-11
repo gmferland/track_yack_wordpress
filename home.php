@@ -15,7 +15,7 @@
     </div>
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 ty_recent_posts">
-        <?php query_posts($query_string . '&posts_per_page=6');
+        <?php query_posts($query_string . '&posts_per_page=12');
           if(have_posts()): while(have_posts()): the_post();
           if ($post->ID == $do_not_duplicate) continue;?>
         <?php get_template_part('content-snapshot', get_post_format());
