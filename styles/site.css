@@ -14,61 +14,6 @@ black #333
 dark gray #525252
 light gray #bfbfbf */
 
-/*
- * Globals
- */
-body {
-  overflow-x: hidden;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-p {
-  font-size: 18px;
-}
-
-h2 {
-  padding-bottom: 4px;
-}
-
-h4 {
-  font-size: 22px;
-}
-
-h1 a,
-h2 a,
-h3 a {
-  color: #333;
-}
-
-h1 a:hover,
-h1 a:focus,
-h2 a:hover, 
-h2 a:focus,
-h3 a:hover
-h3 a:focus {
-  color: #dea74c;
-  text-decoration: none;
-}
-
-p a {
-  color: #dea74c;
-}
-
-p a:hover,
-p a:focus {
-  text-decoration: underline;
-  color: #dea74c;
-}
-
-a, a:hover, a:focus {
-  text-decoration: none;
-  color: #dea74c;
-}
-
-i.social {
-  margin: 5px;
-}
-
 @media (min-width: 769px) {
   .ty_featured_caption h1 {
     font-size: 48px;
@@ -89,160 +34,6 @@ i.social {
 /*
  * Header
  */
-.ty_header {
-  background-color: #161616;
-  width: 100%;
-  height: 67px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
-  border-radius: 0px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-}
-
-.navbar-brand.ty_header_logo {
-  padding-top: 5px;
-  padding-bottom: 0px;
-  padding-left: 50px;
-  padding-right: 20px;
-}
-
-.ty_header_logo img {
-  max-width: 200px;
-}
-
-.ty_header a {
-  text-decoration: none;
-}
-
-/* Header links */
-.ty_header_links {
-  position: relative;
-  display: inline-block;
-}
-
-.ty_header_links>a {
-  color: #dea74c;
-}
-
-.ty_header_links li {  
-  position: relative;
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 3px;
-}
-
-.ty_header_links li a {
-  padding: 10px;
-  color: #FFF;
-}
-
-/* Active state gets a thick underline */
-.ty_header_links li a:hover,
-.ty_header_links li a:active,
-.ty_header_links li a:focus {
-  color: #dea74c;
-  background-color: #161616;
-  border-bottom: 4px solid #dea74c;
-}
-
-/* Header "join us" button */
-.ty_header_button {
-  background-color: #161616;
-  width: 100px;
-  padding: 10px;
-  margin-left: 10px;
-  margin-right: 50px;
-  font-size: 16px;
-  vertical-align: top;
-}
-
-.ty_button {
-  color: #dea74c;
-  border: 2px solid #dea74c;
-}
-
-.ty_button:hover,
-.ty_button:focus {
-  color: #fff;
-  background-color: #dea74c;
-}
-
-.ty_header_button:hover {
-  color: #161616;
-}
-
-/* Medium screen dropdown menu */
-.ty_header_dropdown_med {
-  background-color: #161616;
-  color: #FFF;
-}
-
-.ty_header_dropdown_med a:focus {
-  color: #FFF;
-  background-color: #161616 !important;
-  border: none;
-}
-
-.ty_header_dropdown_med.open a:focus:hover {
-  border: none;
-}
-
-.ty_header_dropdown_med .dropdown-menu {
-  background-color: #161616;
-  color: #FFF;
-}
-
-.ty_header_dropdown_med li a:hover,
-.ty_header_dropdown_med li a:focus {
-  color: #dea74c;
-  border: none;
-}
-
-/* Small screen dropdown menu */
-.ty_header_dropdown_small {
-  border: 2px solid #dea74c;
-  background-color: #161616;
-  margin-top: 4px;
-  margin-left: 50px;
-  float: left;
-}
-
-.ty_header_dropdown_small span {
-  background-color: #dea74c;
-}
-
-.navbar-collapse.collapse.in {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: -1px;
-  margin-right: -1px;
-  background-color: #161616;
-  color: #FFF;
-  z-index: 1000;
-  text-align: center;
-}
-
-.navbar-collapse.collapse.in .ty_header_links,
-.navbar-collapse.collapse.in .ty_header_links li {
-  display: block;
-}
-
-/* Remove animation of collapsing menu */
-.collapsing {
-    -webkit-transition: none;
-    transition: none;
-    display: none;
-}
-
-.navbar-collapse.in a:hover,
-.navbar-collapse.in a:focus {
-  color: #dea74c;
-  border: none;
-}
 
 /*
  * Main content
@@ -424,7 +215,7 @@ i.social {
   color: #fff;
   text-decoration: none;
 }
- 
+
 /* Pagination */
 .pager a,
 .pager a:hover,
@@ -486,7 +277,7 @@ i.social {
 .ty_footer a:hover,
 .ty_footer a:focus {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
 }
 
 .ty_footer_icon {

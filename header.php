@@ -20,7 +20,7 @@
       $theme_url = get_bloginfo( 'template_directory' );
     ?>
     <nav class="navbar navbar-full ty_header">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed ty_header_dropdown_small" data-toggle="collapse" data-target="#ty-header-collapse" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
@@ -83,7 +83,7 @@
             <a href="<?php echo get_option('twitter_url');?>"><i class="social fa fa-twitter fa-2x"></i></a>
             <a href="<?php echo get_option('instagram_url');?>"><i class="social fa fa-instagram fa-2x"></i></a>
             <a href="mailto:track@trackyack.com"><i class="social fa fa-envelope-o fa-2x"></i></a>
-            <a href="<?php echo esc_url($home_url);?>/join-us/" role="button" class="btn ty_button ty_header_button">Join us!</a>
+            <a href="<?php echo esc_url($home_url);?>/join-us/" role="button" class="btn ty_header_button">Join us!</a>
           </div>
         </div>
       </div>  

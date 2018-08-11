@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+@mixin ty_button {
+  color: $gold;
+  border: 2px solid $gold;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $gold;
+  }
+}
