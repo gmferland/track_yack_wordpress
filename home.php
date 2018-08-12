@@ -13,26 +13,24 @@
       <h1 class="ty_recent_posts_title">Recent Posts</h1>
       <hr>
     </div>
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1 ty_recent_posts">
-        <?php query_posts($query_string . '&posts_per_page=12');
-          if(have_posts()): while(have_posts()): the_post();
-          if ($post->ID == $do_not_duplicate) continue;?>
-        <?php get_template_part('content-snapshot', get_post_format());
-          endwhile; ?>
-        <div class="col-xs-12 text-center">
-          <nav>
-            <ul class="pager">
-              <li><?php previous_posts_link( 'Previous' ); ?></li>
-              <li><?php next_posts_link( 'Next' ); ?></li>
-            </ul>
-          </nav>
-        </div>
-        <?php endif;?>
+    <div class="ty_recent_posts">
+      <?php query_posts($query_string . '&posts_per_page=12');
+        if(have_posts()): while(have_posts()): the_post();
+        if ($post->ID == $do_not_duplicate) continue;?>
+      <?php get_template_part('content-snapshot', get_post_format());
+        endwhile; ?>
+      <div class="col-xs-12 text-center">
+        <nav>
+          <ul class="pager">
+            <li><?php previous_posts_link( 'Previous' ); ?></li>
+            <li><?php next_posts_link( 'Next' ); ?></li>
+          </ul>
+        </nav>
       </div>
+      <?php endif;?>
     </div>
   </div>
-  <div class="ty_container ty_browse">
+  <div class="ty_container x-padding ty_browse">
     <div>
       <div class="row">
         <div class="col-xs-12 text-center">
@@ -88,6 +86,7 @@
       </div>
     </div>
   </div>
+  <?php dynamic_sidebar( 'home_widget_1' ); ?>
   <div class="ty_container">
     <div class="ty_twitter">
       <div class="ty_twitter_image">

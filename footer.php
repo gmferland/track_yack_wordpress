@@ -1,5 +1,5 @@
     <div class="ty_footer">
-      <div class="ty_container">
+      <div class="ty_container x-padding">
         <div>
           <div class="col-sm-5 ty_footer_section">
             <div class="row">
@@ -94,7 +94,7 @@
             <div class="ty_footer_text">
               <a href="<?php echo esc_url($home_url);?>/terms">Terms and Conditions</a>
             </div>
-            <div class="ty_footer_text">Copyright 2017 TrackYack</div>
+            <div class="ty_footer_text">Copyright 2016-2018 TrackYack</div>
             <div class="ty_footer_text">All Rights Reserved</div>
           </div>
         </div>

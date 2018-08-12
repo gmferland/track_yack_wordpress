@@ -44,6 +44,10 @@ i.social {
   margin: 5px;
 }
 
+ul {
+  padding: 0;
+}
+
 .ty_container {
   max-width: $container-max-width !important;
   margin: 0 auto;
@@ -72,4 +76,8 @@ i.social {
 .ty_search a {
   color: $black;
   @include hover_link(none);
+}
+
+.widget-area {
+  background-color: $white;
 }

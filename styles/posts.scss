@@ -26,15 +26,32 @@
     height: auto;
   }
 
-  &_snapshot,
+  &_snapshot {
+    padding-bottom: 10px;
+    text-align: left;
+    text-shadow: none;
+
+    .post-text {
+      padding-left: 30px;
+    }
+  }
+
   &_summary {
     padding-bottom: 10px;
     text-align: left;
     text-shadow: none;
-  }
 
-  &_summary h3 {
-    color: $black;
-    @include hover_link(none);
+    h3 {
+      color: $black;
+      @include hover_link(none);
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .ty_post_snapshot {
+    .post-text {
+      padding-left: 15px;
+    }
   }
 }
