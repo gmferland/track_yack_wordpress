@@ -69,6 +69,10 @@ ul {
   max-width: $container-max-width !important;
 }
 
+.ty_button {
+  @include ty_button;
+}
+
 .ty_page_content {
   margin-bottom: 20px;
 }
@@ -80,4 +84,5 @@ ul {
 
 .widget-area {
   background-color: $white;
+  text-align: center;
 }

@@ -36,11 +36,33 @@
   }
 }
 
-@media (max-width: 768px) {
+ul.instagram-pics {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    flex: 1;
+    flex-basis: 33%;
+
+    > a > img {
+      width: 100%;
+      max-width: 380px;
+      max-height: 380px;
+    }
+  }
+}
+
+@media (max-width: $small) {
   .ty_twitter {
     .ty_twitter_overlay h2,
     .ty_featured_caption h2 {
       font-size: 20px;
+    }
+  }
+
+  ul.instagram-pics {
+    li {
+      flex-basis: 100%;
     }
   }
 }

@@ -2,10 +2,10 @@
 
 @mixin ty_button {
   color: $gold;
-  border: 2px solid $gold;
+  border: 2px solid $gold !important;
   &:hover,
   &:focus {
-    color: $white;
+    color: $white !important;
     background-color: $gold;
   }
 }
