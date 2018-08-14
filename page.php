@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div class="ty_container ty_post">
+  <div class="ty_container ty_page">
     <div>
       <?php 
         if ( have_posts() ) : while ( have_posts() ) : the_post();

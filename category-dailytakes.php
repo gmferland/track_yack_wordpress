@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-  <div class="ty_container x-padding y-padding ty_featured">
-    <div class="ty_featured_image" style="background-color: #dea74c;">
+  <div class="ty_container ty_featured">
+    <div class="ty_featured_image" style="background-color: #dea74c; padding: 0 30px;">
       <div>
         <div class="row">
           <div class="col-sm-6">

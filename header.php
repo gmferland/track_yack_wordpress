@@ -83,7 +83,7 @@
             <a href="<?php echo get_option('twitter_url');?>"><i class="social fa fa-twitter fa-2x"></i></a>
             <a href="<?php echo get_option('instagram_url');?>"><i class="social fa fa-instagram fa-2x"></i></a>
             <a href="mailto:track@trackyack.com"><i class="social fa fa-envelope-o fa-2x"></i></a>
-            <a href="<?php echo esc_url($home_url);?>/join-us/" role="button" class="btn ty_header_button">Join us!</a>
+            <a href="<?php echo esc_url($home_url);?>/join-us/" role="button" class="btn ty_header_button">Follow us!</a>
           </div>
         </div>
       </div>  

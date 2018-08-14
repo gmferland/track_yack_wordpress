@@ -7,7 +7,11 @@
 body {
   overflow-x: hidden;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: linear-gradient(to bottom right, $light-gray, $dark-gray);
+  background: linear-gradient(
+    $header-background-black,
+    $light-gray,
+    $almost-black
+  );
 }
 
 p {
@@ -69,12 +73,14 @@ ul {
   max-width: $container-max-width !important;
 }
 
-.ty_button {
-  @include ty_button;
+.ty_page {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
 }
 
-.ty_page_content {
-  margin-bottom: 20px;
+.ty_button {
+  @include ty_button;
 }
 
 .ty_search a {

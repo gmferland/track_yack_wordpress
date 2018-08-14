@@ -39,10 +39,16 @@
 
 .ty_content_home {
   background-color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 
   .ty_recent_posts {
-    max-width: 920px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto 20px;
+    padding: 0 24px;
     &_title,
     &_button {
       display: inline-block;
@@ -52,6 +58,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+  }
+
+  .social_sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
   }
 }
@@ -68,7 +82,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: $small + 1) {
   .ty_featured {
     &_caption {
       h1 {
@@ -77,6 +91,17 @@
       h2 {
         font-size: 36px;
       }
+    }
+  }
+}
+
+@media (max-width: $small) {
+  .ty_content_home {
+    flex-wrap: wrap;
+    .ty_recent_posts,
+    .social_sidebar {
+      flex: initial;
+      flex-basis: 100%;
     }
   }
 }
