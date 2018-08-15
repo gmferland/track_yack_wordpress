@@ -27,13 +27,14 @@
   }
 
   &_snapshot {
-    padding-bottom: 10px;
+    padding: 10px;
     text-align: left;
     text-shadow: none;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
     .post-text {
       padding-left: 30px;

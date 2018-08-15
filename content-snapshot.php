@@ -12,6 +12,5 @@
       <?php echo get_the_date(); if ( in_category('featured') ) echo ' by ', get_the_author() ; ?>
     </p>
     <?php the_excerpt(); ?>
-    <p>Category: <?php echo get_the_category_list(', ') ?></p>
   </div>
 </div>

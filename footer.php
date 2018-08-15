@@ -38,7 +38,7 @@
                   <a href="<?php echo esc_url($home_url);?>/tag/colby/">Colby</a>
                 </div>
               </div>
-              <div class="footer-row center">
+              <div class="footer-row">
                 <div>
                   <a href="<?php echo esc_url($home_url);?>/tag/conncollege/">Conn College</a>
                 </div>

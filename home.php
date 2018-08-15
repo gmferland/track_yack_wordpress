@@ -12,19 +12,22 @@
     <div class="ty_recent_posts">
       <div class="text-center">  
         <h1 class="ty_recent_posts_title">Daily Takes</h1>
-        <hr>
       </div>
       <?php 
-      $args = array( 'posts_per_page' => 6, 'category_name' => 'dailytakes' );
+      $args = array( 'posts_per_page' => 3, 'category_name' => 'dailytakes' );
       $recentTakes = get_posts( $args );
       foreach( $recentTakes as $post ):
         setup_postdata( $post );
         $do_not_duplicate[] = $post->ID;
         get_template_part('content-snapshot', get_post_format());
       endforeach; ?>
+      <div class="ty_flex_center">
+        <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>" class="btn ty_button" role="button">
+          See more Daily Takes
+        </a>
+      </div>
       <div class="text-center">  
         <h1 class="ty_recent_posts_title">Recent Posts</h1>
-        <hr>
       </div>
       <?php query_posts($query_string . '&posts_per_page=12');
         if(have_posts()): while(have_posts()): the_post();

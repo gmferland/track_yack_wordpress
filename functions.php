@@ -2,7 +2,7 @@
 
 // Add scripts and stylesheets
 function trackyack_scripts() {
-  wp_enqueue_style( 'app', get_template_directory_uri() . '/build/app.698e6cd13afc884a9435.css');
+  wp_enqueue_style( 'app', get_template_directory_uri() . '/build/app.4cb210d8f08c102dc69b.css');
   wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '3.3.6' );
   wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/styles/font-awesome/css/font-awesome.min.css' );
   wp_enqueue_script( 'app', get_template_directory_uri() . '/build/app.88ddb73764426066fcd1.js', array(), false, true );
@@ -87,8 +87,8 @@ function ty_widgets_init() {
     'id'            => 'home_widget_1',
     'before_widget' => '<div class="ty_container widget-area">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>',
 	) );
 
 }
@@ -96,3 +96,14 @@ add_action( 'widgets_init', 'ty_widgets_init' );
 
 // Support Featured Images and widgets
 add_theme_support( 'post-thumbnails', 'widgets' );
+
+/**
+ * Filter the except length to 25 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length( $length ) {
+  return 25;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

@@ -9,5 +9,5 @@
 	<h4 class="blog-post-meta"><?php echo get_the_date(); ?> by <?php the_author(); ?></h4>
 	<?php endif;?>
 	<?php the_content(); ?>
-	<?php the_tags();?>
+	<p>Categories: <?php echo get_the_category_list(', ') ?></p>
 </div>

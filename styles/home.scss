@@ -49,9 +49,12 @@
     flex-direction: column;
     margin: 0 auto 20px;
     padding: 0 24px;
-    &_title,
-    &_button {
-      display: inline-block;
+    &_title {
+      margin-bottom: 20px;
+    }
+
+    .ty_post_snapshot {
+      margin-bottom: 30px;
     }
   }
   .ty_flex_center {
