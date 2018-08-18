@@ -16,9 +16,9 @@
           </a>
         </h5>
         <ul class="ty_main_sidebar_list list-unstyled collapse in" id="season">
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/cross/">Cross Country</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/indoor/">Indoor</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/outdoor/">Outdoor</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/cross/">Cross Country</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/indoor/">Indoor</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/outdoor/">Outdoor</a></li>
         </ul>
       </li>
       <li>
@@ -29,17 +29,17 @@
           </a>
         </h5>
         <ul class="ty_main_sidebar_list list-unstyled collapse in" id="school">
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/amherst/">Amherst</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/bates/">Bates</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/bowdoin/">Bowdoin</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/colby/">Colby</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/conncollege/">Conn College</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/hamilton">Hamilton</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/middlebury">Middlebury</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/trinity">Trinity</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/tufts">Tufts</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/wesleyan">Wesleyan</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/tag/williams">Williams</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/amherst/">Amherst</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/bates/">Bates</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/bowdoin/">Bowdoin</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/colby/">Colby</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/conncollege/">Conn College</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/hamilton">Hamilton</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/middlebury">Middlebury</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/trinity">Trinity</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/tufts">Tufts</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/wesleyan">Wesleyan</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/williams">Williams</a></li>
         </ul>
       </li>
       <li>

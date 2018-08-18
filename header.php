@@ -73,7 +73,7 @@
                   <a href="<?php echo esc_url($home_url);?>/about/">About</a>
                 </li>
                 <li>
-                  <a href="<?php echo esc_url($home_url);?>/join-us/">Join us!</a>
+                  <a href="<?php echo esc_url($home_url);?>/join-us/">Follow us!</a>
                 </li>
               </ul>
             </li>

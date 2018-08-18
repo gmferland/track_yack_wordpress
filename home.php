@@ -1,13 +1,24 @@
-<?php get_header();
-  global $post;
-  $args = array( 'posts_per_page' => 1, 'category_name' => 'featured' );
-
-  $myposts = get_posts( $args );
-  foreach ( $myposts as $post ) : setup_postdata( $post );
-    $do_not_duplicate[] = $post->ID; 
-	  get_template_part( 'content-jumbotron', get_post_format() );
-  endforeach; 
-  wp_reset_postdata();?>
+<?php get_header(); ?>
+  <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+    <?php global $post;
+    $args = array( 'posts_per_page' => 5, 'category_name' => 'featured' );
+    $myposts = get_posts( $args );
+    for ($i = 0; $i < count( $myposts ); $i++): ?>
+      <li data-target="#featured-carousel" data-slide-to="<?php echo( (string) $i ); ?>"
+        class="<?php if ( $i == 0 ): echo ( "active" ); endif; ?>"></li>
+    <?php endfor; ?>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+    <?php foreach ( $myposts as $key => $post ) : setup_postdata( $post );
+      $do_not_duplicate[] = $post->ID; ?>
+      <div class="item<?php if ( $key == 0 ): echo( " active" ); endif; ?>">
+        <?php get_template_part( 'content-carousel', get_post_format() ); ?>
+      </div>
+    <?php endforeach; 
+    wp_reset_postdata();?>
+    </div>
+  </div>
   <div class="ty_container y-padding ty_content_home">
     <div class="ty_recent_posts">
       <div class="text-center">  

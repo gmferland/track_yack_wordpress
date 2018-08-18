@@ -12,13 +12,13 @@
               <h4>Browse by season:</h4>
               <div class="footer-row">
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/cross/">Cross Country</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/cross/">Cross Country</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/indoor/">Indoor</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/indoor/">Indoor</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/outdoor/">Outdoor</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/outdoor/">Outdoor</a>
                 </div>
               </div>
             </div>
@@ -26,41 +26,41 @@
               <h4>Browse by school:</h4>
               <div class="footer-row">
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/amherst/">Amherst</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/amherst/">Amherst</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/bates/">Bates</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/bates/">Bates</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/bowdoin/">Bowdoin</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/bowdoin/">Bowdoin</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/colby/">Colby</a>
-                </div>
-              </div>
-              <div class="footer-row">
-                <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/conncollege/">Conn College</a>
-                </div>
-                <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/hamilton">Hamilton</a>
-                </div>
-                <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/middlebury">Middlebury</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/colby/">Colby</a>
                 </div>
               </div>
               <div class="footer-row">
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/trinity">Trinity</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/conncollege/">Conn College</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/tufts">Tufts</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/hamilton">Hamilton</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/wesleyan">Wesleyan</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/middlebury">Middlebury</a>
+                </div>
+              </div>
+              <div class="footer-row">
+                <div>
+                  <a href="<?php echo esc_url($home_url);?>/category/trinity">Trinity</a>
                 </div>
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/tag/williams">Williams</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/tufts">Tufts</a>
+                </div>
+                <div>
+                  <a href="<?php echo esc_url($home_url);?>/category/wesleyan">Wesleyan</a>
+                </div>
+                <div>
+                  <a href="<?php echo esc_url($home_url);?>/category/williams">Williams</a>
                 </div>
               </div>
             </div>  
