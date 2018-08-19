@@ -1,4 +1,4 @@
-<div class="ty_container ty_featured">
+<div class="ty_featured">
   <div class="ty_featured_image" style="background-image: url(
     <?php if ( has_post_thumbnail() ) {
       the_post_thumbnail_url('large');

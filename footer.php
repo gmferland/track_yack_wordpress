@@ -1,3 +1,4 @@
+    </div>
     <div class="ty_footer">
       <div class="ty_container x-padding">
         <div>
@@ -12,7 +13,7 @@
               <h4>Browse by season:</h4>
               <div class="footer-row">
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/category/cross/">Cross Country</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/cross-country/">Cross Country</a>
                 </div>
                 <div>
                   <a href="<?php echo esc_url($home_url);?>/category/indoor/">Indoor</a>
@@ -40,7 +41,7 @@
               </div>
               <div class="footer-row">
                 <div>
-                  <a href="<?php echo esc_url($home_url);?>/category/conncollege/">Conn College</a>
+                  <a href="<?php echo esc_url($home_url);?>/category/connecticut-college/">Conn College</a>
                 </div>
                 <div>
                   <a href="<?php echo esc_url($home_url);?>/category/hamilton">Hamilton</a>

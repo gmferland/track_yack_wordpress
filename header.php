@@ -44,6 +44,11 @@
               </a>
             </li>
             <li>
+              <a href="<?php echo esc_url( $home_url . '/category/interviews/' ); ?>">
+                Interviews
+              </a>
+            </li>
+            <li>
               <a href="<?php echo esc_url( $home_url . '/category/dailytakes/' ); ?>">
                 Daily Takes
               </a>
@@ -88,5 +93,4 @@
         </div>
       </div>  
     </nav>
-  <!-- Body tag closed in footer.php -->
-<!-- Html tag closed in footer.php -->
+    <div class="ty_content">

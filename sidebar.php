@@ -16,7 +16,7 @@
           </a>
         </h5>
         <ul class="ty_main_sidebar_list list-unstyled collapse in" id="season">
-          <li><a href="<?php echo esc_url( $home_url );?>/category/cross/">Cross Country</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/cross-country/">Cross Country</a></li>
           <li><a href="<?php echo esc_url( $home_url );?>/category/indoor/">Indoor</a></li>
           <li><a href="<?php echo esc_url( $home_url );?>/category/outdoor/">Outdoor</a></li>
         </ul>
@@ -33,7 +33,7 @@
           <li><a href="<?php echo esc_url( $home_url );?>/category/bates/">Bates</a></li>
           <li><a href="<?php echo esc_url( $home_url );?>/category/bowdoin/">Bowdoin</a></li>
           <li><a href="<?php echo esc_url( $home_url );?>/category/colby/">Colby</a></li>
-          <li><a href="<?php echo esc_url( $home_url );?>/category/conncollege/">Conn College</a></li>
+          <li><a href="<?php echo esc_url( $home_url );?>/category/connecticut-college/">Conn College</a></li>
           <li><a href="<?php echo esc_url( $home_url );?>/category/hamilton">Hamilton</a></li>
           <li><a href="<?php echo esc_url( $home_url );?>/category/middlebury">Middlebury</a></li>
           <li><a href="<?php echo esc_url( $home_url );?>/category/trinity">Trinity</a></li>

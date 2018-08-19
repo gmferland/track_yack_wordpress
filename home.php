@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-  <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+  <div id="featured-carousel" class="ty_container carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
     <?php global $post;
     $args = array( 'posts_per_page' => 5, 'category_name' => 'featured' );
@@ -13,7 +13,7 @@
     <?php foreach ( $myposts as $key => $post ) : setup_postdata( $post );
       $do_not_duplicate[] = $post->ID; ?>
       <div class="item<?php if ( $key == 0 ): echo( " active" ); endif; ?>">
-        <?php get_template_part( 'content-carousel', get_post_format() ); ?>
+        <?php get_template_part( 'content-jumbotron', get_post_format() ); ?>
       </div>
     <?php endforeach; 
     wp_reset_postdata();?>

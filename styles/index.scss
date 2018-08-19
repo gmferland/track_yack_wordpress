@@ -7,11 +7,6 @@
 body {
   overflow-x: hidden;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: linear-gradient(
-    $header-background-black,
-    $light-gray,
-    $almost-black
-  );
 }
 
 p {
@@ -73,6 +68,14 @@ ul {
   max-width: $container-max-width !important;
 }
 
+.ty_content {
+  background: linear-gradient(
+    $header-background-black,
+    $light-gray,
+    $almost-black
+  );
+}
+
 .ty_page {
   display: flex;
   flex-direction: column;
@@ -91,4 +94,5 @@ ul {
 .widget-area {
   background-color: $white;
   text-align: center;
+  padding: 0 20px;
 }
