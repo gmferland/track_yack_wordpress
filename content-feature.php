@@ -1,4 +1,4 @@
-<div class="ty_post_snapshot">
+<div class="ty_content_feature">
   <div>
     <a href="<?php the_permalink(); ?>">
       <?php if ( has_post_thumbnail() ) {

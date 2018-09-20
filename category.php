@@ -6,10 +6,9 @@
       </div>
       <div class="col-xs-12 col-sm-7">
         <h1><?php single_cat_title(); ?></h1>
-        <h4><?php echo category_description(); ?></h4> 
         <?php 
         if ( have_posts() ) : while ( have_posts() ) : the_post();
-          get_template_part( 'content-summary', get_post_format() );
+          get_template_part( 'content-feature', get_post_format() );
         endwhile;?>
         <nav>
           <ul class="pager">
